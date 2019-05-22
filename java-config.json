@@ -1,0 +1,10 @@
+{
+  "Host": "127.0.0.1:20336",
+  "Fee":"0.0005",
+  "Confirmation":6,
+  "RegisterAssetFee":"10",
+  "RpcConfiguration":{
+    "User": "",
+    "Pass": ""
+  }
+}
