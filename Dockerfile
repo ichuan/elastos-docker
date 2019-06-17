@@ -7,8 +7,8 @@ WORKDIR /opt
 VOLUME /opt/elastos
 EXPOSE 8989
 
-RUN wget https://github.com/elastos/Elastos.ELA/releases/download/v0.3.2-e935/ela && chmod +x ./ela
 RUN wget https://github.com/elastos/Elastos.ELA.Utilities.Java/releases/download/v0.2.2/Elastos.ELA.Utilities.Java.jar
+RUN wget https://github.com/elastos/Elastos.ELA/releases/download/v0.3.3/ela && chmod +x ./ela
 COPY ./config.json ./java-config.json /opt/
 
 COPY ./entrypoint.sh /opt/
