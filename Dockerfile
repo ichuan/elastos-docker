@@ -8,7 +8,7 @@ VOLUME /opt/elastos
 EXPOSE 8989
 
 RUN wget https://github.com/elastos/Elastos.ELA.Utilities.Java/releases/download/v0.2.2/Elastos.ELA.Utilities.Java.jar
-RUN wget https://github.com/elastos/Elastos.ELA/releases/download/v0.3.3/ela && chmod +x ./ela
+RUN wget https://download.elastos.org/elastos-ela/elastos-ela-0.3.4/elastos-ela-v0.3.4-linux-x86_64.tgz -O - | tar --strip-components 1 -xzf -
 COPY ./config.json ./java-config.json /opt/
 
 COPY ./entrypoint.sh /opt/
